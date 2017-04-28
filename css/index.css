@@ -193,6 +193,7 @@
 .center-left-bottom{height: 415px;border: 1px solid #ddd;box-sizing: border-box;text-indent: 10px;}
 .center-left-bottom h2{height: 35px;line-height:35px;border-bottom: 1px solid #ddd;background:#f8f8f8;}
 .center-left-bottom ul li{margin-top: 20px;}
+.center-left-bottom ul li a.active{color:#204e4b;}
 .center-right{width: 795px;}
 .center-right>h3{height: 35px;line-height:35px;border:1px solid #ddd;}
 .center-right>h3 span{display: inline-block;width: 154px;text-align: center;border-right:1px solid #ddd;cursor: pointer;}

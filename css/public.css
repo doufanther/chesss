@@ -59,6 +59,7 @@ a:active {star:expression(this.onFocus=this.blur());}
 .list-bar li:hover a{color: #fff;}
 .seek-bar{width: 150px;height: 70px;line-height:70px;margin-right: 12px;}
 .seek-bar a{color: red;margin-left: 10px;}
+.seek-bar img{vertical-align: middle;}
 
 
 /*底部*/
