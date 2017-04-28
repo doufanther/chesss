@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		 <link rel="stylesheet" href="../css/pagination.css" />
+	</head>
+	<body style="background: #fff;">
+		<!--公用顶部-->
+		<div class="public-top" style="border-bottom: 2px solid #DEDEDE;">
+			<div class="top-bar layout">
+				<div class="logo-bar fl">
+					<a href="" class="logo-text fl"> 
+						<img src="../img/logo.png" alt="" />
+						<p>
+							<span class="tet">浙江棋协会员网</span>
+							<span class="tit">专注棋类资讯与棋协报名</span>
+						</p>						
+					</a>					
+				</div>
+				<div class="list-bar fl">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">新闻</a></li>
+						<li><a href="">赛事</a></li>
+						<li><a href="">报名</a></li>
+						<li><a href="">机构</a></li>
+						<li><a href="">个人中心</a></li>
+					</ul>
+				</div>
+				<div class="seek-bar fr">
+					<img src="../imgs" alt="" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="center clearfix">
+			<div class="center-left fl">
+				<div class="center-left-top">
+					<img src="../img/logo.png" alt="" />
+					您好，test
+				</div>
+				<div class="center-left-bottom">
+					<h2>会员中心</h2>
+					<ul>
+						<li><a href="personalCenter.html">我的赛事</a></li>
+						<li><a href="#">棋谱管理</a></li>
+						<li><a href="personalCenterCircle.html">我的圈子</a></li>
+						<li><a href="#">个人资料</a></li>
+						<li><a href="#">我的消息</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="center-right fr">
+				<h3>
+					<span class="active">推荐赛事</span>
+					<span>所有赛事</span>
+					<span>已报名赛事</span>
+					<span>已结束赛事</span>
+					<span>赛事成绩</span>
+				</h3>
+				<div class="content">
+					<h3>
+						<span>赛事</span>
+						<span>报名费</span>
+						<span>时间</span>
+						<span>状态</span>
+					</h3>
+					<div class="main">
+						<p>比赛批号：123456789</p>
+						<ul class="clearfix">
+							<li>
+								<div class="fl">
+									<img src="../img/chessLogo.png" alt="" />
+								</div>
+								<div class="fr">
+									<h2>新街三小第八届国际象棋比赛</h2>
+									<p>发布方：萧山新街第三小学</p>
+									<p>已参加人数：400</p>
+								</div>
+							</li>
+							<li>￥200/人</li>
+							<li>报名2017-03-20至2017-01-05 <br />比赛2017-03-20至2017-01-05</li>
+							<li>
+								<h5>待比赛</h5>
+								<h5>比赛规程</h5>
+							</li>
+						</ul>
+					</div>
+					<div class="main">
+						<p>比赛批号：123456789</p>
+						<ul class="clearfix">
+							<li>
+								<div class="fl">
+									<img src="../img/chessLogo.png" alt="" />
+								</div>
+								<div class="fr">
+									<h2>新街三小第八届国际象棋比赛</h2>
+									<p>发布方：萧山新街第三小学</p>
+									<p>已参加人数：400</p>
+								</div>
+							</li>
+							<li>￥200/人</li>
+							<li>报名2017-03-20至2017-01-05 <br />比赛2017-03-20至2017-01-05</li>
+							<li>
+								<h5>待比赛</h5>
+								<h5>比赛规程</h5>
+							</li>
+						</ul>
+					</div>
+					<div class="main">
+						<p>比赛批号：123456789</p>
+						<ul class="clearfix">
+							<li>
+								<div class="fl">
+									<img src="../img/chessLogo.png" alt="" />
+								</div>
+								<div class="fr">
+									<h2>新街三小第八届国际象棋比赛</h2>
+									<p>发布方：萧山新街第三小学</p>
+									<p>已参加人数：400</p>
+								</div>
+							</li>
+							<li>￥200/人</li>
+							<li>报名2017-03-20至2017-01-05 <br />比赛2017-03-20至2017-01-05</li>
+							<li>
+								<h5>待比赛</h5>
+								<h5>比赛规程</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content">所有赛事</div>
+				<div class="content">已报名赛事</div>
+				<div class="content">已结束赛事</div>
+				<div class="content">赛事成绩</div>
+				<div class="pages fr">
+        			<div id="Pagination"></div>
+        			<div class="searchPage">
+         				<span class="page-sum">共<strong class="allPage">15</strong>页</span>
+          				<span class="page-go">到<input type="text">页</span>
+         	 			<a href="javascript:;" class="page-btn">确定</a>
+        			</div>
+    			</div>
+			</div>
+		</div>
+		
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.pagination.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#Pagination").pagination("15");
+    		});
+    		$('.center-right h3 span').click(function(){
+    			var a=$(this).index();
+    			console.log(a);
+    			$('.center-right .content').eq(a).show().siblings('.content').hide();
+    		});
+    		$('.list-bar ul li').click(function(){
+    			var a=$(this);
+    			console.log(a);
+    			$(this).addClass('active').siblings().removeClass('active');
+    		});
+		</script>
+	</body>
+</html>

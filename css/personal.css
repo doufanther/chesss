@@ -1,0 +1,47 @@
+/*报名页面*/
+.apply li{width: 32.5%;box-sizing: border-box; padding: 8px 8px 20px 8px;border: 1px solid #ddd;margin-top:10px ;}
+.apply li:nth-child(2),.apply li:nth-child(5),.apply li:nth-child(8),.apply li:nth-child(11){margin: 10px 10px 0 10px;}
+.apply h1 img{width: 100%;}
+.apply h3{text-align: center;height: 35px;line-height: 35px;}
+.apply p{height: 25px;line-height: 25px;}
+.apply p img{vertical-align:middle;margin-right: 10px;}
+.apply p span{color: red;}
+
+/*个人中心页面*/
+.center{width: 990px;margin: 0 auto;padding-top: 70px;}
+.center-left{width: 155px;}
+.center-left-top{border:1px solid #ddd;box-sizing: border-box;padding: 15px 10px;margin-bottom: 20px; line-height:45px;background:#f8f8f8;}
+.center-left-top img{margin-right: 10px;}
+.center-left-bottom{height: 415px;border: 1px solid #ddd;box-sizing: border-box;text-indent: 10px;}
+.center-left-bottom h2{height: 35px;line-height:35px;border-bottom: 1px solid #ddd;background:#f8f8f8;}
+.center-left-bottom ul li{margin-top: 20px;}
+.center-right{width: 795px;}
+.center-right>h3{height: 35px;line-height:35px;border:1px solid #ddd;}
+.center-right>h3 span{display: inline-block;width: 154px;text-align: center;border-right:1px solid #ddd;cursor: pointer;}
+.center-right>h3 span:nth-child(5){border: none;}
+.center-right>h3 span.active{color: #204e4b;}
+.center-right .content h3{background: #f8f8f8;height: 35px;line-height:35px;margin: 20px 0;border: 1px solid #ddd;}
+.center-right .content h3 span{text-align: center;display: inline-block;width: 139px;}
+.center-right .content h3 span:first-child{width: 362px;}
+.center-right .content .main{margin-top: 20px;}
+.center-right .content .main ul{border:1px solid #ddd;margin-top: 5px;}
+.center-right .content .main ul li{float: left;width: 139px;text-align: center;padding-top: 35px;}
+.center-right .content .main ul li:first-child{width:362px;box-sizing: border-box;padding: 15px 20px;border-right:1px solid #ddd;}
+.center-right .content .main ul li h2{margin-bottom: 20px;}
+.center-right .content .main ul li h5{margin-bottom: 10px;}
+.center-right .content .main ul li p{text-align: left;margin-bottom: 10px;}
+
+.center-right div:nth-child(2){display: none;}
+/*个人中心页面我的圈子*/
+.center-right .title{border-bottom: 1px solid #ddd;height: 42px;line-height: 40px;}
+.center-right .title li{float: left;margin-left: 30px;cursor: pointer;}
+.center-right .title li.active{border-bottom: 2px solid #204e4b;color: #204e4b;}
+.center-right .title li span{margin-left: 5px;}
+.center-right .circle{padding: 25px 35px;border-bottom: 1px solid #ddd;}
+.center-right .circle div{width: 20%;}
+.center-right .circle div:nth-child(2){width: 40%;}
+.center-right .circle div p{line-height: 53px;}
+.center-right .circle div p span,.center-right .circle div h5 span{margin-right:20px ;}
+.center-right .circle div p span b,.center-right .circle div h5 span b{margin-left: 10px;}
+.friend{display: none;}
+.friend-title div:first-child{margin: 20px 0 0 20px;}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		 <link rel="stylesheet" href="../css/pagination.css" />		 
+	</head>
+	<body style="background: #fff;">
+		<!--公用顶部-->
+		<div class="public-top" style="border-bottom: 2px solid #DEDEDE;">
+			<div class="top-bar layout">
+				<div class="logo-bar fl">
+					<a href="" class="logo-text fl"> 
+						<img src="../img/logo.png" alt="" />
+						<p>
+							<span class="tet">浙江棋协会员网</span>
+							<span class="tit">专注棋类资讯与棋协报名</span>
+						</p>						
+					</a>					
+				</div>
+				<div class="list-bar fl">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">新闻</a></li>
+						<li><a href="">赛事</a></li>
+						<li><a href="">报名</a></li>
+						<li><a href="">机构</a></li>
+						<li><a href="">个人中心</a></li>
+					</ul>
+				</div>
+				<div class="seek-bar fr">
+					<input type="" name="" id="" value="" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="center clearfix">
+			<div class="center-left fl">
+				<div class="center-left-top">
+					<img src="../img/logo.png" alt="" />
+					您好，test
+				</div>
+				<div class="center-left-bottom">
+					<h2>会员中心</h2>
+					<ul>
+						<li><a href="personalCenter.html">我的赛事</a></li>
+						<li><a href="#">棋谱管理</a></li>
+						<li><a href="personalCenterCircle.html">我的圈子</a></li>
+						<li><a href="#">个人资料</a></li>
+						<li><a href="#">我的消息</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="center-right fr">
+				<ul class="title clearfix">
+					<li class="active">协会<span>5</span></li>
+					<li>好友<span>500</span></li>
+				</ul>
+				<div id="tab-content">
+					<div class="association">
+						<div class="circle clearfix">
+							<div class="fl">
+								<img src="../img/chessLogo.png" alt="" />
+							</div>
+							<div class="fl">
+								<h3>浙江云水棋院</h3>
+								<p><span>教练数<b>10</b></span><span>会员数<b>1000</b></span></p>
+								<h5><span>地址</span><span>浙江杭州</span></h5>
+							</div>
+							<div class="fl">
+								<img src="../img/association.png" alt="" />
+							</div>
+							<div class="fl">
+								<select name="">
+									<option value="">更多</option>
+									<option value="">解除所属关系</option>
+									<option value="">退出协会</option>
+									<option value="">咨询</option>
+								</select>
+							</div>
+						</div>
+						<div class="circle clearfix">
+							<div class="fl">
+								<img src="../img/chessLogo.png" alt="" />
+							</div>
+							<div class="fl">
+								<h3>浙江云水棋院</h3>
+								<p><span>教练数<b>10</b></span><span>会员数<b>1000</b></span></p>
+								<h5><span>地址</span><span>浙江杭州</span></h5>
+							</div>
+							<div class="fl">&nbsp;</div>
+							<div class="fl">
+								<select name="">
+									<option value="">更多</option>
+									<option value="">退出协会</option>
+									<option value="">咨询</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="friend">
+						<div class="friend-title clearfix">
+							<div class="fl">
+								<select name="">
+									<option value="">分类</option>
+									<option value="">教练</option>
+									<option value="">棋友</option>
+								</select>
+							</div>
+							<div class="seek-bar fr">
+								<input type="" name="" id="" value="" />
+								<span></span>
+							</div>
+						</div>
+						<div class="circle clearfix">
+							<div class="fl">
+								<img src="../img/chessLogo.png" alt="" />
+							</div>
+							<div class="fl">
+								<h3>金大川</h3>
+								<p><span>所属协会</span><span>浙江云水棋院</span></p>
+								<h5><span>级别<b>5</b></span><span>教练<b>银小水</b></span></h5>
+							</div>
+							<div class="fl">&nbsp;</div>
+							<div class="fl">
+								<select name="">
+									<option value="">更多</option>
+									<option value="">删除好友</option>
+									<option value="">聊天</option>
+								</select>
+							</div>
+						</div>
+						<div class="circle clearfix">
+							<div class="fl">
+								<img src="../img/chessLogo.png" alt="" />
+							</div>
+							<div class="fl">
+								<h3>金大川</h3>
+								<p><span>所属协会</span><span>浙江云水棋院</span></p>
+								<h5><span>级别<b>5</b></span><span>教练<b>银小水</b></span></h5>
+							</div>
+							<div class="fl">&nbsp;</div>
+							<div class="fl">
+								<select name="">
+									<option value="">更多</option>
+									<option value="">删除好友</option>
+									<option value="">聊天</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../js/jquery-3.1.1.min.js" ></script>
+		<script language="javascript"> 
+			$('.title li').click(function(){ 
+				$(this).addClass("active").siblings().removeClass();
+				$("#tab-content > div").hide().eq($('.title li').index(this)).show(); 
+			}); 
+</script> 
+
+		
+		
+	</body>
+</html>

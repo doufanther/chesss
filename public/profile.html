@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		 <link rel="stylesheet" href="../css/pagination.css" />		 
+	</head>
+	<body style="background: #fff;">
+		<!--公用顶部-->
+		<div class="public-top" style="border-bottom: 2px solid #DEDEDE;">
+			<div class="top-bar layout">
+				<div class="logo-bar fl">
+					<a href="" class="logo-text fl"> 
+						<img src="../img/logo.png" alt="" />
+						<p>
+							<span class="tet">浙江棋协会员网</span>
+							<span class="tit">专注棋类资讯与棋协报名</span>
+						</p>						
+					</a>					
+				</div>
+				<div class="list-bar fl">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">新闻</a></li>
+						<li><a href="">赛事</a></li>
+						<li><a href="">报名</a></li>
+						<li><a href="">机构</a></li>
+						<li><a href="">个人中心</a></li>
+					</ul>
+				</div>
+				<div class="seek-bar fr">
+					<input type="" name="" id="" value="" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="center clearfix">
+			<div class="center-left fl">
+				<div class="center-left-top">
+					<img src="../img/logo.png" alt="" />
+					您好，test
+				</div>
+				<div class="center-left-bottom">
+					<h2>会员中心</h2>
+					<ul>
+						<li><a href="personalCenter.html">我的赛事</a></li>
+						<li><a href="#">棋谱管理</a></li>
+						<li><a href="personalCenterCircle.html">我的圈子</a></li>
+						<li><a href="#">个人资料</a></li>
+						<li><a href="#">我的消息</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="profile fl">
+				<dl class="profile-bar" style="display: none;">
+					<dt>您的基本信息<button class="fr">编辑</button></dt>
+					<dd><span>姓名：大川</span><span>级别：4 级</span></dd>
+					<dd><span>所属协会/棋院：浙江云水棋院</span><span>教练：张小明</span></dd>
+					<dd>身份证：1695151851985611895</dd>
+					<dd><span>绑定手机：15636565498</span></dd>
+				</dl>
+				<dl class="profile-bar">
+					<dt>您的基本信息<button class="fr">保存</button></dt>
+					<dd><span>姓名：<input type="text" /></span><span>级别：<input type="text" /></span></dd>
+					<dd><span>教练：<input type="text" /></span>所属协会/棋院：<span><input type="text" /></span></dd>
+					<dd>身份证：<input type="text" /></dd>
+					<dd><span>绑定手机：<input type="text" /></span><span>修改手机</span></dd>
+				</dl>				
+				<dl class="basics-bar" style="display: none;">
+					<dt>您的个性资料<button class="fr">编辑</button></dt>
+					<dd><span class="basics">当前头像</span><span class="head-portrait"><img src="../img/tx.png"/><a>编辑头像</a></span></dd>
+					<dd><span class="basics">昵称</span><span>天朝超级棋手</span></dd>
+					<dd><span class="basics">所在地</span><span>浙江  杭州</span></dd>
+					<dd><span class="basics">生日</span><span>1995-04-11</span></dd>
+					<dd><span class="basics">血型</span><span>O</span></dd>
+					<dd><span class="basics">简介</span><span>百事通，段子小能手</span></dd>
+					<dd><span class="basics">邮箱</span><span>531821097@qq.com</span></dd>
+					<dd><span class="basics">QQ</span><span>531821097</span></dd>
+					<dd><span class="basics">微博</span><span>嘿嘿专场</span></dd>
+				</dl>
+				<dl class="basics-bar">
+					<dt>您的个性资料<button class="fr">保存</button></dt>
+					<dd><span class="basics">当前头像</span><span class="head-portrait"><img src="../img/tx.png"/><a>编辑头像</a></span></dd>
+					<dd><span class="basics">昵称</span><input type="text" /></dd>
+					<dd><span class="basics">所在地</span><input type="text" /></dd>
+					<dd><span class="basics">生日</span><input type="text" /></dd>
+					<dd><span class="basics">血型</span><input type="text" /></dd>
+					<dd><span class="basics">简介</span><input type="text" /></dd>
+					<dd><span class="basics">邮箱</span><input type="text" /></dd>
+					<dd><span class="basics">QQ</span><input type="text" /></dd>
+					<dd><span class="basics">微博</span><input type="text" /></dd>
+				</dl>
+			</div>
+		</div>
+		
+		<script src="../js/jquery-3.1.1.min.js" ></script>
+		<script language="javascript"> 
+			$('.title li').click(function(){ 
+				$(this).addClass("active").siblings().removeClass();
+				$("#tab-content > div").hide().eq($('.title li').index(this)).show(); 
+			}); 
+</script> 
+
+		
+		
+	</body>
+</html>

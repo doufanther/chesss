@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		 <link rel="stylesheet" href="../css/pagination.css" />		
+		 <style>
+		 	.m_zlxg{ width:93px; height:30px; line-height:30px;cursor:pointer;float:left;margin:0 10px 0 0;display:inline;background:url(../img/zlxg2.jpg) no-repeat;}
+			.m_zlxg p{ width:71px; padding-left:10px; overflow:hidden; line-height:30px; color:#333333; font-size:12px; font-family:"微软雅黑";text-overflow:ellipsis; white-space:nowrap;}
+			.m_zlxg2{ position:absolute; top:29px; border:1px solid #ded3c1;background:#fff; width:91px; display:none; max-height:224px;-height:224px; overflow-x:hidden; overflow-y:auto;white-space:nowrap;}
+			.m_zlxg2 li{line-height:28px;white-space:nowrap; padding-left:10px;font-family:"微软雅黑";color:#333333; font-size:12px;}
+			.m_zlxg2 li:hover{ color:#7a5a21;}
+		</style>
+	</head>
+	<body style="background: #fff;">
+		<!--公用顶部-->
+		<div class="public-top" style="border-bottom: 2px solid #DEDEDE;">
+			<div class="top-bar layout">
+				<div class="logo-bar fl">
+					<a href="" class="logo-text fl"> 
+						<img src="../img/logo.png" alt="" />
+						<p>
+							<span class="tet">浙江棋协会员网</span>
+							<span class="tit">专注棋类资讯与棋协报名</span>
+						</p>						
+					</a>					
+				</div>
+				<div class="list-bar fl">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">新闻</a></li>
+						<li><a href="">赛事</a></li>
+						<li><a href="">报名</a></li>
+						<li><a href="">机构</a></li>
+						<li><a href="">个人中心</a></li>
+					</ul>
+				</div>
+				<div class="seek-bar fr">
+					<input type="" name="" id="" value="" />
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="center clearfix">
+			<div class="center-left fl">
+				<div class="center-left-top">
+					<img src="../img/logo.png" alt="" />
+					您好，test
+				</div>
+				<div class="center-left-bottom">
+					<h2>会员中心</h2>
+					<ul>
+						<li><a href="personalCenter.html">我的赛事</a></li>
+						<li><a href="#">棋谱管理</a></li>
+						<li><a href="personalCenterCircle.html">我的圈子</a></li>
+						<li><a href="#">个人资料</a></li>
+						<li><a href="#">我的消息</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="profile fl">
+				<div class="profile-bar"  id="edit">
+					<div class="clearfix">您的基本信息<b></b><button class="fr" @click="edit">编辑</button></div>
+					<div class="clearfix">
+						<div class="fl">
+							<img :src="usePic" alt="" />
+						</div>
+						<div class="fl">
+							<p><span>姓名：</span>{{name}}</p>
+							<p><span>段位：</span><img :src="rank" alt="" /></p>
+							<p><span>教练：</span>{{coach}}</p>
+							<p><span>所属协会/棋院：</span>{{association}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="profile-bar" id="save" style="display: none;">
+					<div>您的基本信息<b></b><button class="fr" @click="save">保存</button></div>
+					<div class="clearfix">
+						<div class="fl">
+							<img :src="usePic" alt="" />
+						</div>
+						<div class="fl">
+							<p><span>姓名：</span><input type="text"v-model="name"/></p>
+							<p><span>段位：</span><img :src="rank" alt="" /></p>
+							<p><span>教练：</span><input type="text" v-model="coach"/>
+							<p><span>所属协会/棋院：</span><input type="text" v-model="association"/></p>
+						</div>
+					</div>
+				</div>				
+				<dl class="basics-bar" id="edit1">
+					<dt>您的个性资料<b></b><button class="fr" @click="edit1">编辑</button></dt>
+					<dd><span class="basics">昵称</span><span>{{nickname}}</span></dd>
+					<dd><span class="basics">所在地</span><span>{{home.provinces}}</span>&nbsp;<span>{{home.region}}</span></dd>
+					<dd><span class="basics">血型</span><span>{{bloodType}}</span></dd>
+					<dd><span class="basics">简介</span><span>{{intro}}</span></dd>
+					<dd><span class="basics">邮箱</span><span>{{email}}</span></dd>
+					<dd><span class="basics">QQ</span><span>{{qq}}</span></dd>
+					<dd><span class="basics">微博</span><span>{{microblog}}</span></dd>
+				</dl>
+				<dl class="basics-bar" style="display: none;" id="save1">
+					<dt>您的个性资料<b></b><button class="fr" @click="save1">保存</button></dt>
+					<dd><span class="basics">昵称</span><input type="text" v-model="nickname"/></dd>
+					<dd class="clearfix">
+						<span class="basics fl">所在地</span>
+						<form action="" method=post name=form1 class="fl">
+							<select name="selectp"  onChange="selectcityarea('selectp','selectc','form1');" @change="clear" id="provinces">
+								<option value="0" selected>{{home.provinces}}</option>
+							</select>
+							<select name="selectc" id="region">
+								<option value="0" selected>{{home.region}}</option>
+							</select>
+						</form>
+					</dd>
+					<dd>
+						<span class="basics">血型</span>
+						<select name="" v-model="bloodType">
+							<option  value="O">0</option>
+							<option  value="AB">AB</option>
+							<option  value="A">A</option>
+							<option  value="B">B</option>
+						</select>
+					</dd>
+					<dd><span class="basics">简介</span><textarea v-model="intro" name="" rows="" cols=""></textarea></dd>
+					<dd><span class="basics">邮箱</span><input type="text" v-model="email"/></dd>
+					<dd><span class="basics">QQ</span><input type="text" v-model="qq" /></dd>
+					<dd><span class="basics">微博</span><input type="text" v-model="microblog"/></dd>
+				</dl>
+			</div>
+		</div>
+		
+		<script src="../js/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="../js/city.js"></script>
+		<script src="../js/vue.js"></script>
+		<script language="javascript"> 
+			//城市二级联动
+			first("selectp","selectc","form1",0,0);
+			$('.title li').click(function(){ 
+				$(this).addClass("active").siblings().removeClass();
+				$("#tab-content > div").hide().eq($('.title li').index(this)).show(); 
+			}); 
+			var vm = new Vue({
+				el: '.profile',
+				data: {
+					//基本信息数据
+					usePic:'../img/usePic.png',
+					name:'王大川',
+					rank:'../img/grade.png',
+					coach:'张小明',
+					association:'浙江云水棋院',
+					//个人资料
+					nickname:'天朝超级棋手',
+					home:{provinces:'浙江',region:'杭州'},
+					bloodType:'O',
+					intro:'百事通，段子小能手',
+					email:'531821097@qq.com',
+					qq:'531821097',
+					microblog:'嘿嘿专场'
+				},
+				methods:{
+					save:function(){
+						$('#save').hide();
+						$('#edit').show();
+					},
+					edit:function(){
+						$('#save').show();
+						$('#edit').hide();
+					},
+					save1:function(){
+						$('#save1').hide();
+						$('#edit1').show();
+						//省份
+						var pIndex = document.getElementById("provinces").selectedIndex;//获得是第几个被选中了
+						var pText = document.getElementById("provinces").options[pIndex].text;
+						this.home.provinces=pText;
+						//城市
+						var rIndex = document.getElementById("region").selectedIndex;//获得是第几个被选中了
+						var rText = document.getElementById("region").options[rIndex].text;
+						this.home.region=rText;
+					},
+					edit1:function(){
+						$('#save1').show();
+						$('#edit1').hide();
+					},
+					clear:function(){
+						this.home.region='';
+					}
+				}
+			});
+		</script> 
+
+		
+		
+	</body>
+</html>

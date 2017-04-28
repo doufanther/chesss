@@ -1,0 +1,143 @@
+@charset "utf-8";  
+/*  
+  Document   : CSS样式初始化   
+  Author :  
+  Description:  
+  CSS样式表的初始化，全局样式设置。部分样式属性请根据具体页面重置其属性  
+ 
+/* reset */  
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}  /* 初始化标签在所有浏览器中的margin、padding值 */  
+fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/  
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */  
+blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */  
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/  
+input,select,textarea,button {vertical-align:middle}  /* 重置表单控件垂直居中*/  
+button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */  
+body {background:#fff}   /* 重置body 页面背景为白色 */  
+body,th,td,input,select,textarea,button {color: #464646; font-size:12px;line-height:1 ;font-family:"微软雅黑", "黑体","宋体";color:#666} /* 重置页面文字属性 */  
+a {color:#666;text-decoration:none}  /* 重置链接a标签 */  
+a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */  
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */  
+caption {display:none;}    /* 重置表格标题为隐藏 */  
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 */  
+img{vertical-align:top}  /* 图片在当前行内的垂直位置 */  
+
+h1,h2,h3,h4,h5,h6{font-weight: normal;}    
+/* 页面设置 */  
+body{background: #f7f7f7;}  
+  /* 取消a标签点击后的虚线框 */  
+a {outline: none;}    
+a:active {star:expression(this.onFocus=this.blur());}  
+   
+.fl{float: left;}
+.fr{float: right;}
+  
+/*清除浮动*/  
+.clear{clear: both;}  
+  
+/*清除浮动--推荐使用*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+.layout{margin: 0 auto;width: 860px;}
+::-webkit-input-placeholder { /* WebKit browsers */  
+    color:    #ccc;  
+} 
+
+/*顶部*/ 
+.public-top{width: 100%;background: #fff;height: 70px;}
+.top-bar{height: 70px;overflow: hidden;}
+.logo-bar{padding:12px 0 0 24px;}
+.logo-bar img{float: left;}
+.logo-bar p{float: left;margin-left: 10px;margin-top: 8px;}
+.logo-bar p span{display: block;}
+.logo-bar p .tet{font-size: 19px;color: #000;font-weight: bold;margin-bottom: 3px;}
+.list-bar{margin-left: 16px;}
+.list-bar li{float: left;height: 70px;line-height: 70px;padding: 0 10px;margin: 0 10px;font-size: 14px;}
+.list-bar li.active{background: #d40b07;color: #fff;}
+.list-bar li.active a{color: #FFF;}
+.list-bar li:hover{background: #d40b07;color: #fff;}
+.list-bar li:hover a{color: #fff;}
+.seek-bar{width: 150px;height: 70px;line-height:70px;margin-right: 12px;}
+.seek-bar a{color: red;margin-left: 10px;}
+
+
+8888
+/*底部*/
+.footer-bar{width: 100%;background: #5d5d58;height: 182px;margin-top: 55px;}
+.footer{padding: 26px 0 0 16px;overflow: hidden;height: 148px;box-sizing: border-box;}
+.footer-list{width: 25%;}
+.footer-list dt{font-size: 14px;line-height: 20px;color: #fff;}
+.footer-list dd{line-height: 24px;}
+.footer-list dd a{color: #fff;}
+.location{background: #4d4c49;width: 100%;height: 34px;}
+.cari li{float: left;color: #fff;line-height: 34px;text-indent: 10px;}
+
+
+/*登录*/
+.register-bar{position: fixed;top: 122px;right: 294px; width: 220px;height: auto;z-index: 99;}
+.register-bar .take-part{background: #fff; width: 100%;box-sizing: border-box;border: 1px solid #dddddd;padding: 14px 0;text-align: center;}
+.take-part i{width: 25px;height: 25px;display: inline-block;vertical-align: middle;margin-right: 26px;}
+.take-part .bm{background: url(../img/icon/bm.png)no-repeat;}
+.take-part .issue{background: url(../img/icon/issue.png)no-repeat;}
+.take-part a{font-size: 16px;color: #d40b07;line-height: 52px;display: block;}
+.login{width: 100%;height: 256px;border: 1px solid #dddddd;margin-top: 6px;padding: 14px;box-sizing: border-box;background: #fff;}
+.login .group{height: 36px;line-height: 34px;border-bottom: 1px solid #dddddd;}
+.login .group span{display: inline-block;width: 50%;text-align: center;font-size: 14px;cursor: pointer;}
+.field{padding: 0 15px;margin-top: 16px;}
+.field-lis{height: 25px;width: 100%;border: 1px solid #dddddd;margin-bottom: 10px;}
+.field .user{background: url(../img/icon/age.png)9px 6px no-repeat;}
+.field .pwd{background: url(../img/icon/pwd.png)9px 6px no-repeat;}
+.field-lis input{border: none;height: 25px; line-height: 25px;float: right;}
+.field .but{width: 100%;margin-top: 32px;}
+.field .but button{background: #d40b07;display: block;width: 100%;height: 28px;color: #fff;}
+.field .but a{float: right;margin-top: 10px;}
+.ctive{background-color: #d40b07;color: #fff;}
+
+
+
+/*登录页面*/
+.enter{width: 310px;margin:0 auto;color: #FFF;}
+.enter h1{text-align: center;}
+.enter p{margin-top: 80px;}
+.enter b{background:#fff;width: 105px;height: 1px;display: inline-block;position: relative;bottom: 5px;}
+.enter p span{display: inline-block;margin: 0 37px;}
+#login{margin-top:60px;}
+#login input{width: 100%;height: 35px;margin-bottom:35px;border: 1px solid #fff;border-radius: 5px;background: transparent;color: #fff;}
+#login .phone{background: url(../img/icon/phone.png) no-repeat 10px center;text-indent: 45px;color: #fff;}
+#login .passWord{background: url(../img/icon/pwd1.png) no-repeat 10px center;text-indent: 45px;color: #fff;}
+#login .login{background: #41A13F;border: none;}
+.enter a{color: #fff;}
+.enter h3{text-align: center;margin-top: 65px;}
+.enter h4{text-align: center;margin-top: 20px;}
+.enter h4 a{display:block;width: 100%;height: 35px;line-height:35px;border: 1px solid #fff;border-radius: 5px;}
+
+/*注册页面*/
+.register{width: 310px;margin:0 auto;color: #FFF;}
+.register h1{text-align: center;}
+.register p{margin-top: 80px;}
+.register b{background:#fff;width: 105px;height: 1px;display: inline-block;position: relative;bottom: 5px;}
+.register p span{display: inline-block;margin: 0 37px;}
+#register{margin-top:60px;}
+#register input{width: 100%;height: 35px;border: 1px solid #fff;border-radius: 5px;background: transparent;color: #fff;}
+#register .phone{background: url(../img/icon/phone.png) no-repeat 10px center;text-indent: 45px;color: #fff;}
+#register .mailbox{background: url(../img/icon/mailbox.png) no-repeat 10px center;text-indent: 45px;color: #fff;}
+#register .code{background: url(../img/icon/code.png) no-repeat 10px center;text-indent: 45px;color: #fff;}
+#register .passWord{background: url(../img/icon/pwd1.png) no-repeat 10px center;text-indent: 45px;color: #fff;}
+#register .register{background: #405EA1;border: none;}
+#register div{width: 100%;height: 35px;margin: 30px 0;}
+#register div input{width: 50%;}
+#register div a{display: inline-block;width: 140px;height: 37px;line-height:37px;text-align: center;color: #fff;background: #405EA1;border-radius: 5px;}
+.register a{color: #fff;}
+.register h6{text-align: center;margin:10px 0 20px;}
+.register h4{text-align: center;margin-top: 20px;}
+.register h4 a{display:block;width: 100%;height: 35px;line-height:35px;}
+
+/*注册成功页面*/
+.registered{width: 310px;margin:0 auto;color: #FFF;}
+.registered h1{text-align: center;}
+.registered p{margin-top: 80px;text-align: center;}
+.registered p img{width: 120px;}
+.registered a{color: #fff;}
+.registered div{text-align: center;margin:20px 0 100px;}
+.registered h4{text-align: center;margin-top: 20px;}
+.registered h4 a{display:block;width: 130px;height: 35px;margin:0 auto;line-height:35px;background: #166F12;border-radius: 5px;}
