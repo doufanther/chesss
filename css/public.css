@@ -61,7 +61,6 @@ a:active {star:expression(this.onFocus=this.blur());}
 .seek-bar a{color: red;margin-left: 10px;}
 
 
-8888
 /*底部*/
 .footer-bar{width: 100%;background: #5d5d58;height: 182px;margin-top: 55px;}
 .footer{padding: 26px 0 0 16px;overflow: hidden;height: 148px;box-sizing: border-box;}
