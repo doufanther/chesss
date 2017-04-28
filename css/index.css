@@ -14,13 +14,12 @@
 .content-top .ints{margin: 0 24px;}
 .hot-pints dl dd{line-height: 28px;font-size: 16px;}
 .hot-pints dl dd a:hover{text-decoration: underline;color: #346890;}
-.hot-pints dt{line-height: 44px;}
-.hot-pints .affiche dt a{float: right;}
+.hot-pints dt{line-height: 44px;overflow: hidden;}
 .competition{margin-top:26px;}
 .competition-l{width: 568px;}
 .competition-l dl{width: 262px;height: 234px;overflow: hidden;margin-right: 22px;}
 .competition-l dl dt,.splendid dt,.hot-pints .affiche dt{line-height: 44px;font-size: 18px;color: #252525;}
-.competition-l dl dt a,.splendid dt a{font-size: 12px;float: right;}
+.competition-l dl dt a,.splendid dt a,.hot-pints .affiche dt a{font-size: 12px;float: right;}
 .competition-l dl dd{line-height: 26px;font-size: 16px;}
 .splendid{width: 262px;}
 .splendid dd{float: left;margin-bottom: 6px;}
