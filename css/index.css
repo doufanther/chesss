@@ -161,6 +161,8 @@
 .applyDetails .detail-right-bottom ul li{line-height: 25px;}
 .applyDetails .detail-right-bottom dl{width: 185px;margin: 0 auto;background: #fff;}
 .applyDetails .detail-right-bottom dl dd{line-height: 25px;}
+
+
 /*报名页面弹出框*/
 #applyBox {width: 310px;margin:0 auto;}
 #applyBox h1{text-align: center;line-height: 100px;}
