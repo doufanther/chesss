@@ -27,11 +27,12 @@
 .splendid img{width: 128px;height: 95px;}
 
 /*logo轮播*/
-.logo-box{ position: relative;margin-bottom: 10px;display:inline-block;}
-#bank{width: 200%;}
-#bank img{width:48px;height: 48px;}
-#bank dd{width:48px;height: 48px;float: left;margin-right: 48px;}
-.logo-box span{position: absolute;bottom: -25px; left:-56px; display:inline-block;width: 50px;text-align: center;cursor: pointer;}
+.logo-box{position: relative;margin-bottom: 10px;width: 730px;height:82px;line-height:82px;border:1px solid #ddd;border-radius:5px ; margin: 0 auto;padding: 0 65px;}
+#logo{width: 200%;margin-top: 15px;}
+#logo img{width:48px;height: 48px;}
+#logo dd{width:48px;height: 48px;float: left;margin-right: 48px;}
+.logo-box span{position: absolute;bottom: -25px; left:3px; display: inline-block;width: 50px;text-align: center;cursor: pointer;color: red;}
+.logo-box .next{right: 4px; left:auto;}
 .logo-box .next{right: 4px; left:auto;}
 
 
