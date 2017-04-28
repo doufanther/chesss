@@ -38,36 +38,68 @@
 					</ul>
 				</div>
 				<div class="seek-bar fr">
-					<input type="" name="" id="" value="" />
-					<span></span>
+					<img src="../img/topUse.png" alt="" />
+					<span>天朝超级棋手</span>
 				</div>
 			</div>
 		</div>
 		<div class="center clearfix">
 			<div class="center-left fl">
 				<div class="center-left-top">
-					<img src="../img/logo.png" alt="" />
+					<img src="../img/personal/personalPic.png" alt="" />
 					您好，test
 				</div>
 				<div class="center-left-bottom">
 					<h2>会员中心</h2>
 					<ul>
 						<li><a href="personalCenter.html">我的赛事</a></li>
-						<li><a href="chessManage.html">棋谱管理</a></li>
+						<li><a href="chessManage.html" class="active">棋谱管理</a></li>
 						<li><a href="personalCenterCircle.html">我的圈子</a></li>
-						<li><a href="profile.html" class="active">个人资料</a></li>
+						<li><a href="profile.html" >个人资料</a></li>
 						<li><a href="#">我的消息</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="profile fl">
+			<div class="chessManage fl">
+				<div class="game fl">
+					<h3>新街三小第八届校园国际象棋比赛</h3>
+					<p>
+						<span><img src="../img/personal/player1.png" alt="" /></span>
+						<span>小黑队</span>
+						<span><img src="../img/personal/vs.png" alt="" /></span>
+						<span><img src="../img/personal/player2.png" alt="" /></span>
+						<span>小白队</span>
+					</p>
+					<p>
+						历时：<span>56min</span>
+					</p>
+					<div class="bg"><img src="../img/personal/gameBg.png"/></div>
+				</div>
+				<div class="game fl">
+					<h3>新街三小第八届校园国际象棋比赛</h3>
+					<p>
+						<span><img src="../img/personal/player1.png" alt="" /></span>
+						<span>小黑队</span>
+						<span><img src="../img/personal/vs.png" alt="" /></span>
+						<span><img src="../img/personal/player2.png" alt="" /></span>
+						<span>小白队</span>
+					</p>
+					<p>
+						历时：<span>56min</span>
+					</p>
+					<div class="bg"><img src="../img/personal/gameBg.png"/></div>
+				</div>
+				<div class="addGame fl">
+					<span onclick="addGame()"><b></b><s></s></span>
+					<span onclick="addGame()">添加棋谱</span>
+				</div>
 			</div>
 		</div>
 		<script src="../js/jquery-3.1.1.min.js" ></script>
-	
-		
-
-		
-		
+		<script type="text/javascript">
+			function addGame(){
+				$('.chessManage').append('<div class="game fl"><h3>新街三小第八届校园国际象棋比赛</h3><p><span><img src="../img/personal/player1.png" alt="" /></span><span>小黑队</span><span><img src="../img/personal/vs.png" alt="" /></span><span><img src="../img/personal/player2.png" alt="" /></span><span>小白队</span></p><p>历时：<span>56min</span></p><div class="bg"><img src="../img/personal/gameBg.png"/></div></div>')
+			}
+		</script>
 	</body>
 </html>

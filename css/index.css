@@ -237,3 +237,18 @@
 .basics-bar .basics{width: 74px;text-align: right;display: inline-block;margin-right: 36px;}
 .basics-bar .head-portrait{position: relative;width: 132px;height: 132px;display: inline-block;}
 .basics-bar .head-portrait a{position: absolute;bottom: 0px;left: 0px;width: 100%;height: 30px;background-color: rgba(0, 0, 0, 0.5);color: #fff;text-align: center;line-height: 30px;cursor: pointer;}
+
+/*个人中心页面棋谱管理*/
+.chessManage{width:700px;margin-left: 35px;}
+.chessManage .game{width: 325px;height: 165px;border: 1px solid #ddd;text-align: center;position: relative;margin:0 15px 15px 0;}
+.chessManage .game .bg{position: absolute;top:0;right: 0;}
+.chessManage .game h3{line-height: 70px;}
+.chessManage .game p img{vertical-align: middle;}
+.chessManage .game p span:nth-child(3){margin: 0 30px;}
+.chessManage .game p span:first-child,.chessManage .game p span:nth-child(4){margin-right: 5px;}
+.chessManage .game p:nth-child(3){margin-top: 30px;}
+.chessManage .addGame{width: 325px;height: 165px;border: 1px solid #ddd;margin-right: 15px;}
+.chessManage .addGame span:first-child{cursor: pointer;display: inline-block;width: 70px;height: 70px;border: 3px solid #204e4b;position: relative;margin: 45px 0 0 30px;} 
+.chessManage .addGame span:first-child b{display: inline-block;width:35px;height:3px;background:#204e4b;position: absolute;top:33px;left:18px;}
+.chessManage .addGame span:first-child s{display: inline-block;width:3px;height:35px;background:#204e4b;position: absolute;top:18px;left:33px;}
+.chessManage .addGame span:nth-child(2){color: #204E4B;font-size: 20px;position: relative;top:-35px;left: 65px;cursor: pointer;}
