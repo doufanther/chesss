@@ -127,14 +127,14 @@
 
 
 /*报名页面*/
-.apply li{width: 32.5%;box-sizing: border-box; padding: 8px 8px 20px 8px;border: 1px solid #ddd;margin-top:10px ;}
+.apply li{width: 32.5%;height:340px;box-sizing: border-box; padding: 8px 8px 20px 8px;border: 1px solid #ddd;margin-top:10px ;}
 .apply li:nth-child(2),.apply li:nth-child(5),.apply li:nth-child(8),.apply li:nth-child(11){margin: 10px 10px 0 10px;}
 .apply h1 img{width: 100%;}
 .apply h3{text-align: center;height: 35px;line-height: 35px;}
 .apply p{height: 25px;line-height: 25px;}
 .apply p img{vertical-align:middle;margin-right: 10px;}
 .apply p span{color: red;}
-
+.apply p:nth-child(6){padding-left: 28px;}
 /*报名详情页*/
 .applyDetails {margin-top: 50px;}
 .applyDetails .detail-left{width: 650px;}
@@ -249,8 +249,8 @@
 .chessManage .game p span:nth-child(3){margin: 0 30px;}
 .chessManage .game p span:first-child,.chessManage .game p span:nth-child(4){margin-right: 5px;}
 .chessManage .game p:nth-child(3){margin-top: 30px;}
-.chessManage .addGame{width: 325px;height: 165px;border: 1px solid #ddd;margin-right: 15px;}
-.chessManage .addGame span:first-child{cursor: pointer;display: inline-block;width: 70px;height: 70px;border: 3px solid #204e4b;position: relative;margin: 45px 0 0 30px;} 
-.chessManage .addGame span:first-child b{display: inline-block;width:35px;height:3px;background:#204e4b;position: absolute;top:33px;left:18px;}
-.chessManage .addGame span:first-child s{display: inline-block;width:3px;height:35px;background:#204e4b;position: absolute;top:18px;left:33px;}
-.chessManage .addGame span:nth-child(2){color: #204E4B;font-size: 20px;position: relative;top:-35px;left: 65px;cursor: pointer;}
+.addGame{width: 325px;height: 165px;border: 1px solid #ddd;margin: 0 15px 0 0;}
+.addGame span:first-child{cursor: pointer;display: inline-block;width: 70px;height: 70px;border: 3px solid #204e4b;position: relative;margin: 45px 0 0 30px;} 
+.addGame span:first-child b{display: inline-block;width:35px;height:3px;background:#204e4b;position: absolute;top:33px;left:18px;}
+.addGame span:first-child s{display: inline-block;width:3px;height:35px;background:#204e4b;position: absolute;top:18px;left:33px;}
+.addGame span:nth-child(2){color: #204E4B;font-size: 20px;position: relative;top:-35px;left: 65px;cursor: pointer;}

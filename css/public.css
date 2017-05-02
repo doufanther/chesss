@@ -60,7 +60,7 @@ a:active {star:expression(this.onFocus=this.blur());}
 .seek-bar{width: 150px;height: 70px;line-height:70px;margin-right: 12px;}
 .seek-bar a{color: red;margin-left: 10px;}
 .seek-bar img{vertical-align: middle;}
-
+.seek-bar input{background: #fff;border: none;color:red;margin-left: 10px;}
 
 /*底部*/
 .footer-bar{width: 100%;background: #5d5d58;height: 182px;margin-top: 55px;}
