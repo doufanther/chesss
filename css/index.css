@@ -107,6 +107,8 @@
 .ended{height: 44px;background: url(../img/ds.png)no-repeat;line-height: 34px;padding: 0 8px;}
 .ended span{color: #fff;font-size: 14px;}
 .ended a{color: #fff;float: right;}
+#big li{position: relative;height: 120px;width: 246px;float: left;}
+#big li div{position:absolute;bottom: 0;left:0;height:24px;line-height:24px;background: rgba(0,0,0,0.2);color: #fff;width:246px;text-align: center;}
 /*轮播结构*/
 .carousel{position: relative;width: 246px;height: 120px;margin-left:14px;overflow: hidden;}
 .carousel ul{position: absolute;left: 0px;top: 0px;width: 2195px;height: 120px;}
